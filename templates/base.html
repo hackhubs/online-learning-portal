@@ -61,6 +61,9 @@
 			  <li class="nav-item mx-0 mx-lg-1">
 				<a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="{% url 'courses:create_lesson' %}">Create Lesson</a>
 			  </li>
+			  <li class="nav-item mx-0 mx-lg-1">
+				<a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="{% url 'blogs:post_list' %}">Blog</a>
+			  </li>
 			  {% else %}
 			  <li class="nav-item mx-0 mx-lg-1">
 				<a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="{% url 'courses:contact' %}">Contact</a>
@@ -151,7 +154,7 @@
 							<li><a href="">Teachers</a></li>
 							<li><a href="">awards</a></li>
 							<li><a href="">The best students</a></li>
-							<li><a href="">Blog</a></li>
+							<li><a href="/blog/">Blog</a></li>
 							
 						</ul>
 					</div>
