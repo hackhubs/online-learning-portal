@@ -3,16 +3,14 @@
 
 {% block content %}
 <!-- Hero section -->
-<section class="hero-section set-bg" data-setbg="{% static 'webuni/img/hg.jpg'%}">
+<section class="hero-section set-bg" data-setbg="{% static 'webuni/img/hg.jpg'%}" >
   <div class="container">
     <div class="hero-text text-white">
       {% if request.user.is_authenticated %}
       <h2 style="color: blue; background-color: rgb(213, 240, 192); margin-top: 35px;opacity: 0.8;">Welcome {% if request.user.profile.is_teacher == True %}
         back Teacher,
         {% endif %} {{ request.user.username|capfirst }}
-
-       
-      </h2>
+       </h2>
       {% else %}
       <h3 style="color: rgb(17, 9, 41); background-color: rgb(155, 228, 228);margin-top: 35px;opacity: 0.8;">The best free online course-section</h3>
       {% endif %}
@@ -78,13 +76,13 @@
           </div>
           <div class="course-info">
             <div class="course-text">
-              <h5>Geometry</h5>
-              <p>Mathematics 10</p>
-              <div class="students">Grade 10</div>
+              <h5>Beginner Tutorial</h5>
+              <p></p>
+              <div class="students"></div>
             </div>
             <div class="course-author">
               <div class="ca-pic set-bg" data-setbg="{% static 'webuni/img/authors/4.jpg' %}"></div>
-              <p>Name surname, <span>Teachers</span></p>
+              <p>By <span>Abhav</span></p>
             </div>
           </div>
         </div>
@@ -97,13 +95,13 @@
           </div>
           <div class="course-info">
             <div class="course-text">
-              <h5>Electrolysis</h5>
-              <p>Chemistry</p>
-              <div class="students">Grade 12</div>
+              <h5>Top Tricks</h5>
+              <p></p>
+              <div class="students"></div>
             </div>
             <div class="course-author">
               <div class="ca-pic set-bg" data-setbg="{% static 'webuni/img/authors/4.jpg' %}"></div>
-              <p>Name surname, <span>Teachers</span></p>
+              <p>By <span>Aanya</span></p>
             </div>
           </div>
         </div>
@@ -116,13 +114,13 @@
           </div>
           <div class="course-info">
             <div class="course-text">
-              <h5>Trigonometry</h5>
-              <p>Mathematics</p>
-              <div class="students">Grade 11</div>
+              <h5>GOOGLE Interview Tips</h5>
+              <p></p>
+              <div class="students"></div>
             </div>
             <div class="course-author">
               <div class="ca-pic set-bg" data-setbg="{% static 'webuni/img/authors/4.jpg' %}"></div>
-              <p>Name surname, <span>Teachers</span></p>
+              <p>By <span>Kumkar</span></p>
             </div>
           </div>
         </div>
@@ -135,19 +133,20 @@
           </div>
           <div class="course-info">
             <div class="course-text">
-              <h5>Eletric Circuits</h5>
-              <p>Physics</p>
-              <div class="students">Grade 11</div>
+              <h5>Leetcode</h5>
+              <p></p>
+              <div class="students"></div>
             </div>
             <div class="course-author">
               <div class="ca-pic set-bg" data-setbg="{% static 'webuni/img/authors/4.jpg' %}"></div>
-              <p>Namer surname, <span>Teachers</span></p>
+              <p>By<span>Arjit</span></p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  
 </section>
 {% endif %}
 <!-- course section end -->
